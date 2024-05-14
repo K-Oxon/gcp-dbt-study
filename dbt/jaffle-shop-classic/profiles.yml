@@ -1,0 +1,11 @@
+bigquery-profile:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: oxon-dev
+      dataset: dbt_jaffle_shop
+      threads: 1
+      location: asia-northeast1
+      job_retries: 1
